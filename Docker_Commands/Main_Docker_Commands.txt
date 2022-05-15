@@ -1,0 +1,26 @@
+URL=https://www.fosstechnix.com/docker-basic-commands/
+https://docs.docker.com/language/nodejs/run-containers/
+#Checking Docker version
+docker -v
+
+#To pull the docker Images from Docker Hub Repository
+docker pull ubuntu
+
+#Create docker build from dockerfile
+docker build --tag shreyas_docker .
+
+#Check created docker images list after build
+docker images
+
+#Run the dokcer image
+docker run -p 5000:5000 -d shreyas_docker
+
+# List all running docker containers
+docker ps -a
+
+#Docker remove container id
+docker rm 1409f838edb3
+
+#Delete the created docker image
+docker rmi -f shreyas_docker
+
